@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>唯爱帆宝——无悔</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 110vh;
+            justify-content: ,,center;
+            align-items: center;
+            background: linear-gradient(rgba(16, 16, 16, 0.8),
+                    rgba(16, 16, 16, 0.8)),
+                url(https://s1.ax1x.com/2023/01/24/pSYfAzT.jpg) center no-repeat;
+            background-size: cover;
+        }
+        div {
+            margin: -1em 5em 4em 3em;
+        }
+        h3,
+        div {
+            text-align: left;
+            line-height: 1;
+            font-family: Lora, serif;
+        }
+        .glowIn {
+            color: pink;
+        }
+        .glowIn>span {
+            animation: glow-in 0.8s both;
+        }
+        @keyframes glow-in {
+            from {
+                opacity: 0;
+            }
+            65% {
+                opacity: 1;
+                text-shadow: 0 0 25px white;
+            }
+            75% {
+                opacity: 1;
+            }
+            to {
+                opacity: 0.7;
+            }
+        }
+        div{
+           word-break:keep-all;
+           width:600x;
+           height:200px;
+        }
+        #无悔{
+            font-size:20px;
+            color:#f940ff;
+            
+            }
+    </style>
+ 
+</head>
+
+<body>
+
+    <h4 class="glowIn">帆宝</h4>
+     <div class="glowIn">
+        喜欢你，大概是这个世界上,
+        最独断最没有道理的事了,
+        不是权衡利弊,
+        不是见色起意,
+        而是突然间有了一个你让我
+        牵肠挂肚，割舍不下,
+        你是我安稳岁月里的节外生枝,
+        是我平淡生活里的日月星辰,
+        不管是清晨的日出,
+        还是正午的小憩,
+        又或是漫天星辰的夜晚,
+        我都想和你一起度过,
+        别怀疑我为什么爱你,
+        就像鱼恋着海,
+        鸟儿恋着天空,
+        我也不太懂这是什么道理,
+        我想这就好像呼吸,
+        不用练习，只因为是你.
+     </div>
+   <div id="无悔" >
+        天边有云 林间有雾 我心有你 玫瑰不用长高 晚霞自会扶腰
+     </div>
+    <script>
+        let glowInTexts = document.querySelectorAll(".glowIn")
+        glowInTexts.forEach(glowInText => {
+            let letters = glowInText.textContent.split("")
+            glowInText.textContent = ""
+            letters.forEach((letter, i) => {
+                let span = document.createElement("span")
+                span.textContent = letter
+                span.style.animationDelay = `${i * 0.05}s`
+                glowInText.append(span)
+            })
+        })
+    </script>
+    <h4>
+            <audio loop src="http://music.163.com/song/med ia/outer/url?id=526464145.mp3" id="audio" autoplay preload="auto">该浏览器不支持audio属性</audio>
+    <script type="text/javascript">
+//--创建页面监听，等待微信端页面加载完毕 触发音频播放
+        document.addEventListener('DOMContentLoaded', function () {
+            function audioAutoPlay() {
+                var audio = document.getElementById('audio');
+                audio.play();
+                document.addEventListener("WeixinJSBridgeReady", function () {
+                audio.play();
+                }, false);
+            }
+            audioAutoPlay();
+        });
+//--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
+        document.addEventListener('touchstart', function () {
+        function audioAutoPlay() {
+        var audio = document.getElementById('audio');
+            audio.play();
+        }
+        audioAutoPlay();
+        });
+    </script>
+    </h3>
+</body>
+<audio autoplay="autopaly" loop="loop" id="audios" preload="auto">
+    <source src="http://pan.dogmc.top/view.php/94e9ea8f861f03dfb7e6d06941bdbe27.mp3" />
+</audio>
+
+</html>
